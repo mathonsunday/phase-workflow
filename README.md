@@ -16,7 +16,7 @@ A reusable two-phase (vibe → mature) development workflow for Claude Code proj
 | `.claude/settings.json` | Claude Code hooks: blocks test creation in vibe, detects maturation signals (regressions, reverts) |
 | `.claude/skills/vibe/SKILL.md` | `/vibe` command — switch to exploration mode |
 | `.claude/skills/phase/SKILL.md` | `/phase` command — show current phase and constraints |
-| `.husky/pre-commit` | Phase-aware pre-commit: lint + types in both phases; dead code, security, tests in mature |
+| `.husky/pre-commit` | Phase-aware pre-commit: types in vibe; lint + types + dead code + security + tests in mature |
 | `.husky/commit-msg` | Conventional commits enforcement (mature only) |
 | `.lintstagedrc.json` | ESLint + Prettier on staged files |
 | `commitlint.config.js` | Conventional commit message rules |
@@ -52,7 +52,8 @@ The project starts in **vibe** phase.
 
 ### Vibe
 
-- ESLint + TypeScript type checking on every commit
+- TypeScript type checking on every commit (catches actually broken code)
+- ESLint is **skipped** on commit — fixing lint errors without tests risks regressions
 - Dead code detection runs but warns only
 - Test file creation is **blocked** by Claude Code hook
 - No conventional commit enforcement
