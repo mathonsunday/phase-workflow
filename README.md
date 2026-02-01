@@ -59,12 +59,12 @@ The project starts in **vibe** phase.
 
 ### Mature
 
-- Everything from vibe, plus:
+- ESLint + TypeScript type checking on every commit
 - Dead code detection **blocks** commits
 - Security scanning (semgrep) **blocks** commits
 - Tests must pass to commit
 - Conventional commit messages enforced
-- Test file creation is allowed
+- Test file creation is **allowed**
 
 ### Maturation signals
 
