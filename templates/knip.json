@@ -1,0 +1,6 @@
+{
+  "entry": ["{{ENTRY_POINTS}}"],
+  "project": ["{{PROJECT_GLOBS}}"],
+  "ignore": ["dist/**", "node_modules/**"],
+  "ignoreBinaries": ["semgrep"]
+}

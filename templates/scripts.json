@@ -1,0 +1,12 @@
+{
+  "lint": "eslint .",
+  "test": "vitest",
+  "test:ui": "vitest --ui",
+  "test:coverage": "vitest --coverage",
+  "dead-code": "knip",
+  "dead-code:fix": "knip --fix",
+  "security": "semgrep --config \"p/default\" src/ api/ --severity ERROR --severity WARNING",
+  "mutate": "npx mutation-test-gen",
+  "verify": "npm run type-check && npm run lint && npm run dead-code && npm run security && npm test",
+  "prepare": "husky"
+}

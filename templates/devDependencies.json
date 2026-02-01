@@ -1,0 +1,17 @@
+{
+  "@commitlint/cli": "^20.4.0",
+  "@commitlint/config-conventional": "^20.4.0",
+  "@eslint/js": "^9.39.1",
+  "eslint": "^9.39.1",
+  "eslint-plugin-react-hooks": "^7.0.1",
+  "eslint-plugin-react-refresh": "^0.4.24",
+  "eslint-plugin-redos": "^4.5.0",
+  "globals": "^16.5.0",
+  "husky": "^9.1.7",
+  "knip": "^5.82.1",
+  "lint-staged": "^16.2.7",
+  "mutation-test-gen": "file:../mutation-test-gen",
+  "prettier": "^3.8.1",
+  "typescript-eslint": "^8.46.4",
+  "vitest": "^4.0.17"
+}
